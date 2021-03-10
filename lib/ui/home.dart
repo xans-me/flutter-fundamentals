@@ -1,3 +1,4 @@
+import 'package:first_flutter_app/ui/custom_button.dart';
 import 'package:flutter/material.dart';
 
 class ScaffoldExample extends StatelessWidget {
@@ -25,13 +26,15 @@ class ScaffoldExample extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            InkWell(
-              child: Text(
-                "Tap me!",
-                style: TextStyle(fontSize: 24.0),
-              ),
-              onTap: () => debugPrint("tapped..."),
-            ),
+            CustomButton()
+
+            // InkWell(
+            //   child: Text(
+            //     "Tap me!",
+            //     style: TextStyle(fontSize: 24.0),
+            //   ),
+            //   onTap: () => debugPrint("tapped..."),
+            // ),
           ],
         ),
       ),
