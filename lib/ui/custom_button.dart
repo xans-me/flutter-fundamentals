@@ -1,3 +1,8 @@
+/*
+  Custom Button :
+  Button with Gesture Detector (onTap) to showing snackbar
+ */
+
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
