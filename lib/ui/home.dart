@@ -6,6 +6,7 @@ class ScaffoldExample extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Usage of Material Scaffold with Action Buttons and Center Title on AppBar
     return Scaffold(
       appBar: AppBar(
         title: Text("Scaffold Title Bar"),
@@ -18,8 +19,21 @@ class ScaffoldExample extends StatelessWidget {
           IconButton(icon: Icon(Icons.access_alarm), onPressed: _tapButton)
         ],
       ),
-      body: Center(
-        child: Text("Hello Again!"),
+      backgroundColor: Colors.redAccent.shade100,
+      body: Container(
+        alignment: Alignment.center,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            InkWell(
+              child: Text(
+                "Tap me!",
+                style: TextStyle(fontSize: 24.0),
+              ),
+              onTap: () => debugPrint("tapped..."),
+            ),
+          ],
+        ),
       ),
     );
   }
